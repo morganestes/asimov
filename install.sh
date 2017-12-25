@@ -5,7 +5,7 @@
 # @author  Steve Grunwell
 # @license MIT
 
-DIR="$(pwd)"
+DIR="$(cd "$(dirname "$0")" || return; pwd -P)"
 PLIST="com.stevegrunwell.asimov.plist"
 
 # Verify that Asimov is executable.
